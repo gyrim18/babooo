@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>친구의 바보 수치 측정기</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>친구의 바보 수치 측정기</h1>
+    
+    <label for="friendName">친구 이름을 입력하세요:</label><br>
+    <input type="text" id="friendName" name="friendName"><br><br>
+    <button onclick="calculateBaboIndex()">확인</button><br><br>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateBaboIndex() {
+            var friendName = document.getElementById("friendName").value;
+            var baboPercentage = Math.floor(Math.random() * 101); // 0부터 100 사이의 무작위 숫자 생성
+
+            var resultMessage = friendName + '님은 ' + baboPercentage + '% 바보입니다!';
+            document.getElementById("result").innerText = resultMessage;
+        }
+    </script>
+</body>
+</html>

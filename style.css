@@ -1,0 +1,71 @@
+body {
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.friend-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.friend-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.friend-name-and-foolishness-level {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#friendNameText {
+    color: #333;
+}
+
+#foolishnessLevel {
+    color: #ff0000; /* 빨간색으로 표시 */
+}
